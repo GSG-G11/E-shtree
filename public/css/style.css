@@ -1,7 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(cover.jpg);
     background-size: cover;
     font-family: "Dongle", sans-serif;
     box-sizing: border-box;

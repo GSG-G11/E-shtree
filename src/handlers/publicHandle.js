@@ -1,7 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 const contentType ={
-    css: "text/css"
+    css: "text/css",
+    js :"text/javascript"
 }
 const publicHandle = (res,url) => {  
     const extension = url.split('.')[1];

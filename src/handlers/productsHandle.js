@@ -13,4 +13,16 @@ const productsHandle = (res) => {
         }
     });
 };
-module.exports = productsHandle;
+const postHandler = (res)=>{
+    const filePath = path.join(__dirname, '..' ,'..','public', 'js/fetch.js');
+    fs.readFile(filePath, (error, file) => {
+        if (error) {
+            res.writeHead(500);
+            res.end('SERVER ERROR');
+        } else {
+            res.writeHead(200, {'content-Type':'text/js'});
+            res.end(file);
+        }
+    });
+}
+module.exports = {productsHandle, postHandler};
