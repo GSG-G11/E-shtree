@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(cover.jpg);
+    background-size: cover;
+    font-family: "Dongle", sans-serif;
+    box-sizing: border-box;
+    color: white;
+    height: 100vh;
+}
+.container {
+    position: absolute;
+    left: 15%;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+h1 {
+    font-family: 'Quintessential', cursive;
+    font-size: 60px;
+    word-spacing: 2px;
+    animation: animations 1s ease-in ;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+
+}
+.search {
+    background-color: #cdcaca54;
+    width: 405px;
+    height: 30px;
+    border-radius: 20px;
+    position: relative;
+    padding:5px 15px;
+    overflow: hidden;
+}
+.search input {
+    font-family: "Dongle", sans-serif;
+    position: absolute;
+   
+    border: none;
+    background-color: transparent;
+    color: white;
+    outline: transparent;
+    font-size: 1.6rem;
+
+}
+.search i {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+   
+}
+.card {
+    background-color:#cdcaca54 ;
+    width: 400px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 5px;
+   
+}
+.card .time , .card .weather{
+
+    display: flex;
+    align-items: center;
+    
+}
+.card p {
+    font-size: 30px;
+}
+.card .time i  , .card .weather i {
+    margin-right: 10px;
+}
