@@ -20,7 +20,7 @@ const router = (req, res) => {
     else if (url === '/getAllProducts') {
         getProductHandler(res)
     }
-    else if (url === '/js/getAllProducts.js') {
+    else if (url === '/js/getAllProduct.js') {
         publicHandle(res , url);
     }
     else{

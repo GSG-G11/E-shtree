@@ -29,8 +29,12 @@ function fetch(url, userData) {
                 if (arr.length > 0) {
                     arr.forEach(element => {
                         const li = document.createElement('li');
-                        li.innerText = element.title;
-                        ul.appendChild(li);
+                        const a = document.createElement('a');
+                        a.innerText = element.title;
+                        a.setAttribute('href',`https://fakestoreapi.com/products/${element.id}`)
+                        li.appendChild(a);
+                        ul.appendChild(li);    
+                        // ul.appendChild(li);
                     });
                 }else{
                     const li = document.createElement('li');
