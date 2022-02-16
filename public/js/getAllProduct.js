@@ -4,9 +4,18 @@
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
                 let data = JSON.parse(xhr.responseText);
-                console.log(data)
+                data.forEach(element => {
+                    const h3 = document.createElement('h3');
+                    h3.innerText =element.title;
+                    h3.classList.add('title');
+                    document.querySelector('.card').appendChild(h3);
+                    const img = document.createElement('img');
+                    img.classList.add('productImg');
+                    img.src =element.image;
+                    document.querySelector('.card').appendChild(img);
+                });
             } else if (xhr.status === 404) {
-                faild(timeZoon, cityWeather)
+                console.log('404 NOT FOUND');
             }
         }
     }
